@@ -11,21 +11,31 @@ import java.util.List;
 @RequestMapping(value = "/api/v1/base")
 public class ParamsRestController {
 
-    @GetMapping(value = "1-param")
-    @ResponseBody
-    public List<String> unParam() {
-        return List.of("Harley");
+//    @GetMapping(value = "1-param")
+//    @ResponseBody
+//    public List<String> unParam() {
+//        return List.of("Harley");
+//    }
+
+//    @GetMapping(value = "2-params")
+//    @ResponseBody
+//    public List<String> deuxParam() {
+//        return List.of("Harley", "Ivy");
+//    }
+
+//    @GetMapping(value = "params")
+//    @ResponseBody
+//    public List<String> personJson(){
+//        return List.of("John Dupont", "Maria Martez", "Chloé Smith");
+//    }
+
+    @GetMapping("1-param")
+    public String get1Param(){
+    return "Harley";
     }
 
-    @GetMapping(value = "2-params")
-    @ResponseBody
-    public List<String> deuxParam() {
+    @GetMapping("params")
+    public List<String> getCollParams(){
         return List.of("Harley", "Ivy");
-    }
-
-    @GetMapping(value = "params")
-    @ResponseBody
-    public List<String> personJson(){
-        return List.of("John Dupont", "Maria Martez", "Chloé Smith");
     }
 }

@@ -26,14 +26,14 @@ public class ParamsController {
 //        return "param2";
 //    }
 
-    @RequestMapping(value = "coll-params")
-//    @ResponseBody
-    public String personName(Model model){
-        List<String> persons = List.of("John Dupont", "Maria Martez", "Chloé Smith");
-//        List<String> persons = List.of();
-        model.addAttribute("persons", persons);
-        return "allPersons";
-    }
+//    @RequestMapping(value = "coll-params")
+////    @ResponseBody
+//    public String personName(Model model){
+//        List<String> persons = List.of("John Dupont", "Maria Martez", "Chloé Smith");
+////        List<String> persons = List.of();
+//        model.addAttribute("persons", persons);
+//        return "allPersons";
+//    }
 
 //    CORRECTION
 
